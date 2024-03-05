@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Starting PizzaStore!");
+            Store s = new Store();
+            s.Start();
         }
     }
 }

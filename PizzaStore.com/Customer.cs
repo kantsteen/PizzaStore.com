@@ -20,9 +20,6 @@ namespace PizzaStore.com
         #endregion
 
 
-
-
-
         #region constructors
         public Customer(string name, string phoneNumber, string adress, string paymentMethod)
         {
@@ -33,9 +30,6 @@ namespace PizzaStore.com
 
         }
         #endregion
-
-
-
 
 
         #region properties
@@ -67,6 +61,7 @@ namespace PizzaStore.com
 
 
         #endregion
+
 
         #region ToString
         public override string ToString()

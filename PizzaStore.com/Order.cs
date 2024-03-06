@@ -10,7 +10,6 @@ namespace PizzaStore.com
 {
     internal class Order
     {
-        // instance field
         #region instance field
         private string _orderID;
         private double _taxPct;
@@ -22,8 +21,6 @@ namespace PizzaStore.com
         #endregion
 
 
-
-        // constructors
         #region constructors
         public Order(string orderID, Pizza p, Customer c)
         {
@@ -36,8 +33,6 @@ namespace PizzaStore.com
         #endregion
 
 
-
-        // properties
         #region properties
 
 
@@ -60,6 +55,7 @@ namespace PizzaStore.com
         }
 
         #endregion
+
 
         #region ToString
         public override string ToString()

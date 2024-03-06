@@ -21,6 +21,7 @@ namespace PizzaStore.com
 
 
         #region constructors
+
         public Customer(string name, string phoneNumber, string adress, string paymentMethod)
         {
             _name = name;
@@ -29,6 +30,7 @@ namespace PizzaStore.com
             _paymentMethod = paymentMethod;
 
         }
+
         #endregion
 
 
@@ -58,19 +60,17 @@ namespace PizzaStore.com
             set { _paymentMethod = value; } 
         }
 
-
-
         #endregion
 
 
         #region ToString
+
         public override string ToString()
         {
             return $"Name: {Name} - Adress: {Adress} - Phone number: {PhoneNumber} - Payment method: {PaymentMethod}";
         }
 
         #endregion
-
 
 
     }

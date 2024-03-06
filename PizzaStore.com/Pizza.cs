@@ -19,6 +19,7 @@ namespace PizzaStore.com
 
 
         #region constructors
+
         public Pizza(string name, string topping, string size, int price)
         {
             _name = name;
@@ -26,10 +27,12 @@ namespace PizzaStore.com
             _size = size;
             _topping = topping;
         }
+
         #endregion
        
 
         #region properties
+
         public string Name
         { 
             get { return _name; } 
@@ -52,20 +55,17 @@ namespace PizzaStore.com
             set { _price = value; }
         }
 
-        
-
-
-
         #endregion
 
 
         #region ToString
+
         public override string ToString()
         {
             return $"Name: {Name} - Topping: {Topping} - Size: {Price} - Price: {Price}";
         }
-        #endregion
 
+        #endregion
 
 
     }

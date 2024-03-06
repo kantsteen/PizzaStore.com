@@ -11,17 +11,18 @@ namespace PizzaStore.com
     internal class Order
     {
         #region instance field
+
         private string _orderID;
         private double _taxPct;
         private int _deliveryCosts;
         Customer customer;
         Pizza pizza;
 
-
         #endregion
 
 
         #region constructors
+
         public Order(string orderID, Pizza p, Customer c)
         {
             TaxPct = 1.25;
@@ -30,11 +31,11 @@ namespace PizzaStore.com
             pizza = p;
             customer = c;
         }
+
         #endregion
 
 
         #region properties
-
 
         public string OrderID 
         { 
@@ -58,6 +59,7 @@ namespace PizzaStore.com
 
 
         #region ToString
+
         public override string ToString()
         {
             return $" - OrderID: {OrderID} - Pizza: {pizza.Name} - Customer: {customer.Name} - Total: {CalculateTotalPrice()} DKK";
@@ -65,10 +67,15 @@ namespace PizzaStore.com
 
         #endregion
 
+
+        #region CalculateTotalPrice
+
         public double CalculateTotalPrice()
         {
             return pizza.Price * TaxPct + DeliveryCosts;
         }
+
+        #endregion
 
 
     }
